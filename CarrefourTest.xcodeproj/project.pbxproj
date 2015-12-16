@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0404814F1C200203007F3927 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0404814E1C200203007F3927 /* main.m */; };
+		040481521C200203007F3927 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040481511C200203007F3927 /* AppDelegate.m */; };
+		040481551C200203007F3927 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040481541C200203007F3927 /* ViewController.m */; };
+		040481581C200203007F3927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040481561C200203007F3927 /* Main.storyboard */; };
+		0404815A1C200203007F3927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040481591C200203007F3927 /* Assets.xcassets */; };
+		0404815D1C200203007F3927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0404815B1C200203007F3927 /* LaunchScreen.storyboard */; };
+		040481681C200203007F3927 /* CarrefourTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040481671C200203007F3927 /* CarrefourTestTests.m */; };
+		040481731C200203007F3927 /* CarrefourTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040481721C200203007F3927 /* CarrefourTestUITests.m */; };
+		040481811C200305007F3927 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 040481801C200305007F3927 /* GoogleService-Info.plist */; };
+		2ADD612135D0FF7FC1DF26BD /* libPods-CarrefourTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF321E7368AECAA31C9EFA /* libPods-CarrefourTest.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		040481641C200203007F3927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 040481421C200203007F3927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040481491C200203007F3927;
+			remoteInfo = CarrefourTest;
+		};
+		0404816F1C200203007F3927 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 040481421C200203007F3927 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040481491C200203007F3927;
+			remoteInfo = CarrefourTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0404814A1C200203007F3927 /* CarrefourTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrefourTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0404814E1C200203007F3927 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		040481501C200203007F3927 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		040481511C200203007F3927 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		040481531C200203007F3927 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		040481541C200203007F3927 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		040481571C200203007F3927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		040481591C200203007F3927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0404815C1C200203007F3927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0404815E1C200203007F3927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040481631C200203007F3927 /* CarrefourTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarrefourTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		040481671C200203007F3927 /* CarrefourTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarrefourTestTests.m; sourceTree = "<group>"; };
+		040481691C200203007F3927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0404816E1C200203007F3927 /* CarrefourTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarrefourTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		040481721C200203007F3927 /* CarrefourTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarrefourTestUITests.m; sourceTree = "<group>"; };
+		040481741C200203007F3927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040481801C200305007F3927 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18EF321E7368AECAA31C9EFA /* libPods-CarrefourTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CarrefourTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AAF9EBBD6E3C5E16DB3883A /* Pods-CarrefourTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarrefourTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarrefourTest/Pods-CarrefourTest.debug.xcconfig"; sourceTree = "<group>"; };
+		7530EB51A80505752B2B8CFE /* Pods-CarrefourTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarrefourTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarrefourTest/Pods-CarrefourTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		040481471C200203007F3927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADD612135D0FF7FC1DF26BD /* libPods-CarrefourTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040481601C200203007F3927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0404816B1C200203007F3927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040481411C200203007F3927 = {
+			isa = PBXGroup;
+			children = (
+				0404814C1C200203007F3927 /* CarrefourTest */,
+				040481661C200203007F3927 /* CarrefourTestTests */,
+				040481711C200203007F3927 /* CarrefourTestUITests */,
+				0404814B1C200203007F3927 /* Products */,
+				D25360DE620DFB7D5FED294E /* Pods */,
+				2CEFF8125C5DA85268859386 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0404814B1C200203007F3927 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0404814A1C200203007F3927 /* CarrefourTest.app */,
+				040481631C200203007F3927 /* CarrefourTestTests.xctest */,
+				0404816E1C200203007F3927 /* CarrefourTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0404814C1C200203007F3927 /* CarrefourTest */ = {
+			isa = PBXGroup;
+			children = (
+				040481501C200203007F3927 /* AppDelegate.h */,
+				040481511C200203007F3927 /* AppDelegate.m */,
+				040481531C200203007F3927 /* ViewController.h */,
+				040481541C200203007F3927 /* ViewController.m */,
+				040481561C200203007F3927 /* Main.storyboard */,
+				040481591C200203007F3927 /* Assets.xcassets */,
+				0404815B1C200203007F3927 /* LaunchScreen.storyboard */,
+				0404815E1C200203007F3927 /* Info.plist */,
+				0404814D1C200203007F3927 /* Supporting Files */,
+			);
+			path = CarrefourTest;
+			sourceTree = "<group>";
+		};
+		0404814D1C200203007F3927 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				040481801C200305007F3927 /* GoogleService-Info.plist */,
+				0404814E1C200203007F3927 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		040481661C200203007F3927 /* CarrefourTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				040481671C200203007F3927 /* CarrefourTestTests.m */,
+				040481691C200203007F3927 /* Info.plist */,
+			);
+			path = CarrefourTestTests;
+			sourceTree = "<group>";
+		};
+		040481711C200203007F3927 /* CarrefourTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				040481721C200203007F3927 /* CarrefourTestUITests.m */,
+				040481741C200203007F3927 /* Info.plist */,
+			);
+			path = CarrefourTestUITests;
+			sourceTree = "<group>";
+		};
+		2CEFF8125C5DA85268859386 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18EF321E7368AECAA31C9EFA /* libPods-CarrefourTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D25360DE620DFB7D5FED294E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AAF9EBBD6E3C5E16DB3883A /* Pods-CarrefourTest.debug.xcconfig */,
+				7530EB51A80505752B2B8CFE /* Pods-CarrefourTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		040481491C200203007F3927 /* CarrefourTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040481771C200203007F3927 /* Build configuration list for PBXNativeTarget "CarrefourTest" */;
+			buildPhases = (
+				9F47741FD43840689F7FCCB9 /* Check Pods Manifest.lock */,
+				040481461C200203007F3927 /* Sources */,
+				040481471C200203007F3927 /* Frameworks */,
+				040481481C200203007F3927 /* Resources */,
+				C7171B9A0CE13740DA4C80BA /* Embed Pods Frameworks */,
+				348AC577CEFD4578AF7FA0DC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarrefourTest;
+			productName = CarrefourTest;
+			productReference = 0404814A1C200203007F3927 /* CarrefourTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		040481621C200203007F3927 /* CarrefourTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0404817A1C200203007F3927 /* Build configuration list for PBXNativeTarget "CarrefourTestTests" */;
+			buildPhases = (
+				0404815F1C200203007F3927 /* Sources */,
+				040481601C200203007F3927 /* Frameworks */,
+				040481611C200203007F3927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				040481651C200203007F3927 /* PBXTargetDependency */,
+			);
+			name = CarrefourTestTests;
+			productName = CarrefourTestTests;
+			productReference = 040481631C200203007F3927 /* CarrefourTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0404816D1C200203007F3927 /* CarrefourTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0404817D1C200203007F3927 /* Build configuration list for PBXNativeTarget "CarrefourTestUITests" */;
+			buildPhases = (
+				0404816A1C200203007F3927 /* Sources */,
+				0404816B1C200203007F3927 /* Frameworks */,
+				0404816C1C200203007F3927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				040481701C200203007F3927 /* PBXTargetDependency */,
+			);
+			name = CarrefourTestUITests;
+			productName = CarrefourTestUITests;
+			productReference = 0404816E1C200203007F3927 /* CarrefourTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		040481421C200203007F3927 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Webcomm;
+				TargetAttributes = {
+					040481491C200203007F3927 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					040481621C200203007F3927 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 040481491C200203007F3927;
+					};
+					0404816D1C200203007F3927 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 040481491C200203007F3927;
+					};
+				};
+			};
+			buildConfigurationList = 040481451C200203007F3927 /* Build configuration list for PBXProject "CarrefourTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 040481411C200203007F3927;
+			productRefGroup = 0404814B1C200203007F3927 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				040481491C200203007F3927 /* CarrefourTest */,
+				040481621C200203007F3927 /* CarrefourTestTests */,
+				0404816D1C200203007F3927 /* CarrefourTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		040481481C200203007F3927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0404815D1C200203007F3927 /* LaunchScreen.storyboard in Resources */,
+				040481811C200305007F3927 /* GoogleService-Info.plist in Resources */,
+				0404815A1C200203007F3927 /* Assets.xcassets in Resources */,
+				040481581C200203007F3927 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040481611C200203007F3927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0404816C1C200203007F3927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		348AC577CEFD4578AF7FA0DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarrefourTest/Pods-CarrefourTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F47741FD43840689F7FCCB9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7171B9A0CE13740DA4C80BA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarrefourTest/Pods-CarrefourTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		040481461C200203007F3927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040481551C200203007F3927 /* ViewController.m in Sources */,
+				040481521C200203007F3927 /* AppDelegate.m in Sources */,
+				0404814F1C200203007F3927 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0404815F1C200203007F3927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040481681C200203007F3927 /* CarrefourTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0404816A1C200203007F3927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040481731C200203007F3927 /* CarrefourTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		040481651C200203007F3927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040481491C200203007F3927 /* CarrefourTest */;
+			targetProxy = 040481641C200203007F3927 /* PBXContainerItemProxy */;
+		};
+		040481701C200203007F3927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040481491C200203007F3927 /* CarrefourTest */;
+			targetProxy = 0404816F1C200203007F3927 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		040481561C200203007F3927 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040481571C200203007F3927 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0404815B1C200203007F3927 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0404815C1C200203007F3927 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		040481751C200203007F3927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		040481761C200203007F3927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		040481781C200203007F3927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AAF9EBBD6E3C5E16DB3883A /* Pods-CarrefourTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CarrefourTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = webComm.test.CarrefourTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		040481791C200203007F3927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7530EB51A80505752B2B8CFE /* Pods-CarrefourTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CarrefourTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = webComm.test.CarrefourTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0404817B1C200203007F3927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CarrefourTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webcomm.test.CarrefourTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarrefourTest.app/CarrefourTest";
+			};
+			name = Debug;
+		};
+		0404817C1C200203007F3927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CarrefourTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webcomm.test.CarrefourTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarrefourTest.app/CarrefourTest";
+			};
+			name = Release;
+		};
+		0404817E1C200203007F3927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CarrefourTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webcomm.test.CarrefourTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CarrefourTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		0404817F1C200203007F3927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CarrefourTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.webcomm.test.CarrefourTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CarrefourTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		040481451C200203007F3927 /* Build configuration list for PBXProject "CarrefourTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040481751C200203007F3927 /* Debug */,
+				040481761C200203007F3927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040481771C200203007F3927 /* Build configuration list for PBXNativeTarget "CarrefourTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040481781C200203007F3927 /* Debug */,
+				040481791C200203007F3927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0404817A1C200203007F3927 /* Build configuration list for PBXNativeTarget "CarrefourTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0404817B1C200203007F3927 /* Debug */,
+				0404817C1C200203007F3927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0404817D1C200203007F3927 /* Build configuration list for PBXNativeTarget "CarrefourTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0404817E1C200203007F3927 /* Debug */,
+				0404817F1C200203007F3927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 040481421C200203007F3927 /* Project object */;
+}
