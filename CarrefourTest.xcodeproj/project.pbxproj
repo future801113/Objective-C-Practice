@@ -18,6 +18,7 @@
 		040481811C200305007F3927 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 040481801C200305007F3927 /* GoogleService-Info.plist */; };
 		04755C9B1C21521D0058AD5F /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04755C9A1C21521D0058AD5F /* MapViewController.m */; };
 		04A5D57E1C21710900E1AFE9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A5D57D1C21710900E1AFE9 /* MapKit.framework */; };
+		04A5D5821C22B94000E1AFE9 /* CustomMKAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D5811C22B94000E1AFE9 /* CustomMKAnnotation.m */; };
 		2ADD612135D0FF7FC1DF26BD /* libPods-CarrefourTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF321E7368AECAA31C9EFA /* libPods-CarrefourTest.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		04755C991C21521D0058AD5F /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		04755C9A1C21521D0058AD5F /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		04A5D57D1C21710900E1AFE9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		04A5D5801C22B94000E1AFE9 /* CustomMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMKAnnotation.h; sourceTree = "<group>"; };
+		04A5D5811C22B94000E1AFE9 /* CustomMKAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMKAnnotation.m; sourceTree = "<group>"; };
 		18EF321E7368AECAA31C9EFA /* libPods-CarrefourTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CarrefourTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAF9EBBD6E3C5E16DB3883A /* Pods-CarrefourTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarrefourTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarrefourTest/Pods-CarrefourTest.debug.xcconfig"; sourceTree = "<group>"; };
 		7530EB51A80505752B2B8CFE /* Pods-CarrefourTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarrefourTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarrefourTest/Pods-CarrefourTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +119,7 @@
 		0404814C1C200203007F3927 /* CarrefourTest */ = {
 			isa = PBXGroup;
 			children = (
+				04A5D57F1C22B91F00E1AFE9 /* Model */,
 				040481501C200203007F3927 /* AppDelegate.h */,
 				040481511C200203007F3927 /* AppDelegate.m */,
 				040481531C200203007F3927 /* ViewController.h */,
@@ -156,6 +160,15 @@
 				040481741C200203007F3927 /* Info.plist */,
 			);
 			path = CarrefourTestUITests;
+			sourceTree = "<group>";
+		};
+		04A5D57F1C22B91F00E1AFE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04A5D5801C22B94000E1AFE9 /* CustomMKAnnotation.h */,
+				04A5D5811C22B94000E1AFE9 /* CustomMKAnnotation.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		2CEFF8125C5DA85268859386 /* Frameworks */ = {
@@ -364,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A5D5821C22B94000E1AFE9 /* CustomMKAnnotation.m in Sources */,
 				040481551C200203007F3927 /* ViewController.m in Sources */,
 				040481521C200203007F3927 /* AppDelegate.m in Sources */,
 				0404814F1C200203007F3927 /* main.m in Sources */,

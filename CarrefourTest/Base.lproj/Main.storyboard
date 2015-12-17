@@ -110,7 +110,7 @@
                                 <rect key="frame" x="0.0" y="44" width="320" height="303"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFX-8B-fOz">
-                                <rect key="frame" x="33" y="361" width="30" height="30"/>
+                                <rect key="frame" x="20" y="355" width="30" height="30"/>
                                 <state key="normal" title="定位"/>
                                 <connections>
                                     <action selector="buttonLocate:" destination="lka-sd-PAy" eventType="touchUpInside" id="giI-Fk-9Uc"/>
