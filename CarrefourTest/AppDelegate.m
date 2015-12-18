@@ -90,8 +90,4 @@ didDisconnectWithUser:(GIDGoogleUser *)user
     // Perform any operations when the user disconnects from app here.
     // ...
 }
-
-- (void)signInCallBack{
-    
-}
 @end

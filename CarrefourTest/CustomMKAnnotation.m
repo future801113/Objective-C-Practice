@@ -14,15 +14,17 @@
 @synthesize title;
 @synthesize subtitle;
 
--(id) initWithCoordinate: (CLLocationCoordinate2D) the_coordinate
-{
+#define imageSize ((int) 25)
+
+-(id) initWithCoordinate: (CLLocationCoordinate2D) the_coordinate {
     if (self = [super init])
     {
         coordinate = the_coordinate;
     }
     return self;
 }
--(MKAnnotationView *) annotationView{
+
+-(MKAnnotationView *) annotationView {
     MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:self reuseIdentifier:@"MyCustomAnnotation"];
     
     annotationView.enabled = YES;
@@ -30,13 +32,12 @@
     
     UIImage *image = [UIImage imageNamed:@"icon"];
     
-    int size = 25;
     // Create a graphics image context
-    UIGraphicsBeginImageContext(CGSizeMake(size, size));
+    UIGraphicsBeginImageContext(CGSizeMake(imageSize, imageSize));
     
     // Tell the old image to draw in this new context, with the desired
     // new size
-    [image drawInRect:CGRectMake(0,0,size,size)];
+    [image drawInRect:CGRectMake(0, 0, imageSize, imageSize)];
     
     // Get the new image from the context
     UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
