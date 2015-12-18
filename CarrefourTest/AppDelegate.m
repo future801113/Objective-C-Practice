@@ -68,6 +68,8 @@
                      options:options];
 }
 
+#pragma mark - GIDSignInDelegate method
+
 - (void)signIn:(GIDSignIn *)signIn
 didSignInForUser:(GIDGoogleUser *)user
      withError:(NSError *)error {
