@@ -13,11 +13,17 @@
 
 @implementation MapViewController
 
+//全域變數是設這邊嗎...?
+double selectLan;
+double selectLon;
+id<MKOverlay> preOverlay;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.mapView.delegate = self;
     self.locationManager = [[CLLocationManager alloc] init];
+    
     self.locationManager.delegate = self;
     
     //設定精準度為導航等級
@@ -54,6 +60,7 @@
 //    [self createAnnotation:CLLocationCoordinate2DMake(25.0467541, 121.5338736) andTitle:@"家樂福1" andAddress:@"台北市中山區渭水路一號一樓"];
 //    [self createAnnotation:CLLocationCoordinate2DMake(25.0413598, 121.5329002)andTitle:@"家樂福2" andAddress:@"台北市大安區新生南路一段95號"];
 //    [self createAnnotation:CLLocationCoordinate2DMake(25.0422646, 121.5318991)andTitle:@"家樂福3" andAddress:@"台北市中正區忠孝東路二段132號"];
+    //傳入地址 自動轉成座標並畫在地圖上
     [self geoCoderAndCreateAnntation:@"家樂福1" andAddress:@"台北市中山區渭水路一號一樓"];
     [self geoCoderAndCreateAnntation:@"家樂福2" andAddress:@"台北市大安區新生南路一段95號"];
     [self geoCoderAndCreateAnntation:@"家樂福3" andAddress:@"台北市中正區忠孝東路二段132號"];
@@ -124,12 +131,15 @@
     customMKAnnotation.title = title;
     customMKAnnotation.address = inputAddress;
     
+    
+    
     [self.mapView setRegion:kaos_digital];
     
     // 把annotation加進MapView裡
     [self.mapView addAnnotation:customMKAnnotation];
 }
 
+//載入Custon AnntoatinView
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
     
     if([annotation isKindOfClass:[CustomMKAnnotation class]]){
@@ -143,11 +153,26 @@
         else
             annotationView.annotation = annotation;
         
+        //加入導航按鈕
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+
+        [button addTarget:self action:@selector(buttonAccessoryRouteClicked) forControlEvents:UIControlEventTouchUpInside];
+        annotationView.rightCalloutAccessoryView = button;
+
+        
         return annotationView;
     } else {
         return nil;
     }
+}
 
+//點選AnnotationView時觸發
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
+    if ([view.annotation isKindOfClass:[CustomMKAnnotation class]]) {
+        CustomMKAnnotation *selectAnnotation = view.annotation;
+        selectLan = selectAnnotation.coordinate.latitude;
+        selectLon = selectAnnotation.coordinate.longitude;
+    }
 }
 
 // 地理编码
@@ -157,11 +182,6 @@
     [geoC geocodeAddressString:inputAddress completionHandler:^(NSArray<CLPlacemark *> * __nullable placemarks, NSError * __nullable error) {
         // 包含区，街道等信息的地标对象
         CLPlacemark *placemark = [placemarks firstObject];
-        // 城市名称
-        //        NSString *city = placemark.locality;
-        // 街道名称
-        //        NSString *street = placemark.thoroughfare;
-        // 全称
         NSString *name = placemark.name;
         NSString *getAddress = [NSString stringWithFormat:@"%@", name];
         NSString *latitudeTF = [NSString stringWithFormat:@"%f", placemark.location.coordinate.latitude];
@@ -171,8 +191,43 @@
         CLLocationCoordinate2D location = CLLocationCoordinate2DMake(placemark.location.coordinate.latitude, placemark.location.coordinate.longitude);
         [self createAnnotation:location andTitle:title andAddress:inputAddress];
     }];
+}
+
+
+//導航
+- (void)findDirectionsFrom:(MKMapItem *)source
+                        to:(MKMapItem *)destination
+{    MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
+    request.source = source;
+    request.transportType = MKDirectionsTransportTypeAutomobile;
+    request.destination = destination;
+    MKDirections *directions = [[MKDirections alloc] initWithRequest:request];
+    [directions calculateDirectionsWithCompletionHandler:
+     ^(MKDirectionsResponse *response, NSError *error) {
+         
+         //stop loading animation here
+         
+         if (error) {
+             NSLog(@"Error is %@",error);
+         } else {
+             //若有導航過先清除路線
+             if(preOverlay != nil)
+                 [self.mapView removeOverlay:preOverlay];
+             
+             //do something about the response, like draw it on map
+             MKRoute *route = [response.routes firstObject];
+             [self.mapView addOverlay:route.polyline level:MKOverlayLevelAboveRoads];
+         }
+     }];
+}
+//導航路線圖設定
+-(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay{
+    preOverlay = overlay;
     
-    
+    MKPolylineRenderer *polylineRender = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
+    polylineRender.lineWidth = 3.0f;
+    polylineRender.strokeColor = [UIColor blueColor];
+    return polylineRender;
 }
 
 - (IBAction)buttonLocate:(id)sender {
@@ -182,6 +237,21 @@
 
 - (IBAction)buttonClick:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void) buttonAccessoryRouteClicked {
+    //目前座標
+    CLLocationCoordinate2D _srcCoord = CLLocationCoordinate2DMake(self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude);
+    MKPlacemark *_srcMark = [[MKPlacemark alloc] initWithCoordinate:_srcCoord addressDictionary:nil];
+    MKMapItem *_srcItem = [[MKMapItem alloc] initWithPlacemark:_srcMark];
+    
+    //選到的店
+    CLLocationCoordinate2D _destCoord = CLLocationCoordinate2DMake(selectLan, selectLon);
+    MKPlacemark *_destMark = [[MKPlacemark alloc] initWithCoordinate:_destCoord addressDictionary:nil];
+    MKMapItem *_destItem = [[MKMapItem alloc] initWithPlacemark:_destMark];
+    
+    //導航
+    [self findDirectionsFrom:_srcItem to:_destItem];
 }
 
 @end

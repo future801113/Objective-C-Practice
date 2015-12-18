@@ -12,7 +12,7 @@
 
 @synthesize coordinate;
 @synthesize title;
-@synthesize subtitle;
+@synthesize address;
 
 #define imageSize ((int) 25)
 
@@ -43,17 +43,17 @@
     
     annotationView.image = newImage;
     
-    //點擊右邊的I
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    [button addTarget:self action:@selector(buttonAccessoryClicked) forControlEvents:UIControlEventTouchUpInside];
-    annotationView.rightCalloutAccessoryView = button;
+//    //點擊右邊的I
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+//    [button addTarget:self action:@selector(buttonAccessoryClicked) forControlEvents:UIControlEventTouchUpInside];
+//    annotationView.rightCalloutAccessoryView = button;
     
     return annotationView;
 }
 
-- (void) buttonAccessoryClicked {
-    NSLog(@"button have been clicked.");
-}
+//- (void) buttonAccessoryClicked {
+//    NSLog(@"button have been clicked.");
+//}
 
 
 
