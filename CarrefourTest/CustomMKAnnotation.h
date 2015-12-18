@@ -10,10 +10,9 @@
 #import <MapKit/MapKit.h>
 
 @interface CustomMKAnnotation : NSObject <MKAnnotation> {
-    
     CLLocationCoordinate2D coordinate;
     NSString *title;
-    NSString *subtitle;
+    NSString *address;
 }
 
 - (id) initWithCoordinate:(CLLocationCoordinate2D)coord;
@@ -21,7 +20,6 @@
 
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property (nonatomic, retain) NSString *title;
-@property (nonatomic, retain) NSString *subtitle;
-
+@property (nonatomic, retain) NSString *address;
 
 @end

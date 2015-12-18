@@ -31,25 +31,30 @@
     annotationView.canShowCallout = YES;
     
     UIImage *image = [UIImage imageNamed:@"icon"];
-    
     // Create a graphics image context
     UIGraphicsBeginImageContext(CGSizeMake(imageSize, imageSize));
-    
     // Tell the old image to draw in this new context, with the desired
     // new size
     [image drawInRect:CGRectMake(0, 0, imageSize, imageSize)];
-    
     // Get the new image from the context
     UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
-    
     // End the context
     UIGraphicsEndImageContext();
     
     annotationView.image = newImage;
     
-    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    //點擊右邊的I
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    [button addTarget:self action:@selector(buttonAccessoryClicked) forControlEvents:UIControlEventTouchUpInside];
+    annotationView.rightCalloutAccessoryView = button;
     
     return annotationView;
 }
+
+- (void) buttonAccessoryClicked {
+    NSLog(@"button have been clicked.");
+}
+
+
 
 @end
