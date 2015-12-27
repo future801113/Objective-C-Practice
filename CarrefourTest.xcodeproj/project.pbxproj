@@ -17,6 +17,7 @@
 		040481731C200203007F3927 /* CarrefourTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040481721C200203007F3927 /* CarrefourTestUITests.m */; };
 		040481811C200305007F3927 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 040481801C200305007F3927 /* GoogleService-Info.plist */; };
 		04755C9B1C21521D0058AD5F /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04755C9A1C21521D0058AD5F /* MapViewController.m */; };
+		04868A601C2FD50A00D7896B /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04868A5F1C2FD50A00D7896B /* PushViewController.m */; };
 		04A5D57E1C21710900E1AFE9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A5D57D1C21710900E1AFE9 /* MapKit.framework */; };
 		04A5D5821C22B94000E1AFE9 /* CustomMKAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D5811C22B94000E1AFE9 /* CustomMKAnnotation.m */; };
 		2ADD612135D0FF7FC1DF26BD /* libPods-CarrefourTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF321E7368AECAA31C9EFA /* libPods-CarrefourTest.a */; };
@@ -59,6 +60,8 @@
 		040481801C200305007F3927 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04755C991C21521D0058AD5F /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		04755C9A1C21521D0058AD5F /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		04868A5E1C2FD50A00D7896B /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		04868A5F1C2FD50A00D7896B /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
 		04A5D57D1C21710900E1AFE9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		04A5D5801C22B94000E1AFE9 /* CustomMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMKAnnotation.h; sourceTree = "<group>"; };
 		04A5D5811C22B94000E1AFE9 /* CustomMKAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMKAnnotation.m; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				040481541C200203007F3927 /* ViewController.m */,
 				04755C991C21521D0058AD5F /* MapViewController.h */,
 				04755C9A1C21521D0058AD5F /* MapViewController.m */,
+				04868A5E1C2FD50A00D7896B /* PushViewController.h */,
+				04868A5F1C2FD50A00D7896B /* PushViewController.m */,
 				040481561C200203007F3927 /* Main.storyboard */,
 				040481591C200203007F3927 /* Assets.xcassets */,
 				0404815B1C200203007F3927 /* LaunchScreen.storyboard */,
@@ -379,6 +384,7 @@
 			files = (
 				04A5D5821C22B94000E1AFE9 /* CustomMKAnnotation.m in Sources */,
 				040481551C200203007F3927 /* ViewController.m in Sources */,
+				04868A601C2FD50A00D7896B /* PushViewController.m in Sources */,
 				040481521C200203007F3927 /* AppDelegate.m in Sources */,
 				0404814F1C200203007F3927 /* main.m in Sources */,
 				04755C9B1C21521D0058AD5F /* MapViewController.m in Sources */,
