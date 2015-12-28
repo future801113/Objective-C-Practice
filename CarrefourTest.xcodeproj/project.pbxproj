@@ -160,17 +160,12 @@
 			isa = PBXGroup;
 			children = (
 				04868A611C2FD6A600D7896B /* lib */,
-				04A5D57F1C22B91F00E1AFE9 /* Model */,
-				04868A811C2FE16800D7896B /* CarrefourTest.entitlements */,
+				04A5D57F1C22B91F00E1AFE9 /* Google */,
+				04868A941C30E6A000D7896B /* LightSpeed */,
 				040481501C200203007F3927 /* AppDelegate.h */,
 				040481511C200203007F3927 /* AppDelegate.m */,
 				040481531C200203007F3927 /* ViewController.h */,
 				040481541C200203007F3927 /* ViewController.m */,
-				04755C991C21521D0058AD5F /* MapViewController.h */,
-				04755C9A1C21521D0058AD5F /* MapViewController.m */,
-				04868A5E1C2FD50A00D7896B /* PushViewController.h */,
-				04868A5F1C2FD50A00D7896B /* PushViewController.m */,
-				04868A901C30CCBA00D7896B /* LightspeedCredentials.h */,
 				040481561C200203007F3927 /* Main.storyboard */,
 				040481591C200203007F3927 /* Assets.xcassets */,
 				0404815B1C200203007F3927 /* LaunchScreen.storyboard */,
@@ -265,13 +260,26 @@
 			path = Arrownock;
 			sourceTree = "<group>";
 		};
-		04A5D57F1C22B91F00E1AFE9 /* Model */ = {
+		04868A941C30E6A000D7896B /* LightSpeed */ = {
 			isa = PBXGroup;
 			children = (
+				04868A811C2FE16800D7896B /* CarrefourTest.entitlements */,
+				04868A5E1C2FD50A00D7896B /* PushViewController.h */,
+				04868A5F1C2FD50A00D7896B /* PushViewController.m */,
+				04868A901C30CCBA00D7896B /* LightspeedCredentials.h */,
+			);
+			name = LightSpeed;
+			sourceTree = "<group>";
+		};
+		04A5D57F1C22B91F00E1AFE9 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				04755C991C21521D0058AD5F /* MapViewController.h */,
+				04755C9A1C21521D0058AD5F /* MapViewController.m */,
 				04A5D5801C22B94000E1AFE9 /* CustomMKAnnotation.h */,
 				04A5D5811C22B94000E1AFE9 /* CustomMKAnnotation.m */,
 			);
-			name = Model;
+			name = Google;
 			sourceTree = "<group>";
 		};
 		2CEFF8125C5DA85268859386 /* Frameworks */ = {
