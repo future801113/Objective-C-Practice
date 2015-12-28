@@ -10,8 +10,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="v39-o0-1L0"/>
+                        <viewControllerLayoutGuide type="bottom" id="tf4-tM-dzG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -89,8 +89,8 @@
             <objects>
                 <viewController id="lka-sd-PAy" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="skV-Mn-RBa"/>
-                        <viewControllerLayoutGuide type="bottom" id="CRA-IE-gO2"/>
+                        <viewControllerLayoutGuide type="top" id="bqS-qE-NS0"/>
+                        <viewControllerLayoutGuide type="bottom" id="qAG-hp-gWf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jJr-3s-FJ1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -141,8 +141,8 @@
             <objects>
                 <viewController id="OjL-AG-E01" customClass="PushViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RQZ-mp-7P4"/>
-                        <viewControllerLayoutGuide type="bottom" id="tR8-bg-lXk"/>
+                        <viewControllerLayoutGuide type="top" id="oHv-kH-GyM"/>
+                        <viewControllerLayoutGuide type="bottom" id="KbL-Uv-F8a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bGM-pu-5id">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -186,9 +186,61 @@
                                     <action selector="buttonSendNotification:" destination="OjL-AG-E01" eventType="touchUpInside" id="MNX-HT-Rh1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJ6-2D-NAK">
+                                <rect key="frame" x="20" y="264" width="240" height="30"/>
+                                <state key="normal" title="New Custom Object (Merchandise)"/>
+                                <connections>
+                                    <action selector="buttonNewCustomObject:" destination="OjL-AG-E01" eventType="touchUpInside" id="bQB-bu-wgy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="自定義物件（商品）：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sY4-s5-aAE">
+                                <rect key="frame" x="20" y="186" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="商品名稱" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W9C-o9-xbt">
+                                <rect key="frame" x="20" y="226" width="115" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="商品價錢" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bZ8-pr-75L">
+                                <rect key="frame" x="170" y="226" width="108" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W3A-BX-Qzb">
+                                <rect key="frame" x="22" y="336" width="256" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellIdentifier" id="rgO-0M-DgU">
+                                        <rect key="frame" x="0.0" y="28" width="256" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rgO-0M-DgU" id="vN8-Yu-JmH">
+                                            <rect key="frame" x="0.0" y="0.0" width="256" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="OjL-AG-E01" id="8YQ-z9-vGy"/>
+                                    <outlet property="delegate" destination="OjL-AG-E01" id="ro3-jG-KjT"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="商品列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4B-5x-xwd">
+                                <rect key="frame" x="33" y="307" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="inputName" destination="W9C-o9-xbt" id="gTe-wP-14V"/>
+                        <outlet property="inputPrice" destination="bZ8-pr-75L" id="How-Gf-38E"/>
+                        <outlet property="tableViewMerchandise" destination="W3A-BX-Qzb" id="YHz-Xy-hVS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aba-PK-XYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

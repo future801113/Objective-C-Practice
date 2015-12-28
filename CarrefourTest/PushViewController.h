@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "AnSocial.h"
 
-@interface PushViewController : UIViewController
+@interface PushViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) AnSocial *anSocial;
+@property (weak, nonatomic) IBOutlet UITextField *inputName;
+@property (weak, nonatomic) IBOutlet UITextField *inputPrice;
+@property (weak, nonatomic) IBOutlet UITableView *tableViewMerchandise;
+
+//declare a property to store your current responder
+@property (nonatomic, assign) id currentResponder;  //點鍵盤外面可收起鍵盤
 
 - (IBAction)buttonClick:(id)sender;
 

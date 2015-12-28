@@ -187,4 +187,10 @@ didDisconnectWithUser:(GIDGoogleUser *)user
 //    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 //}
 
+-(BOOL) textFieldShouldReturn: (UITextField *) textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
+
 @end
