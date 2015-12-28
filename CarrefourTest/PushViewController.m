@@ -18,7 +18,6 @@ NSMutableArray *merchandiseArray;
 - (void)viewDidLoad {
     [super viewDidLoad];
     merchandiseArray = [[NSMutableArray alloc] init];
-//    roleArray = [[NSArray alloc] initWithObjects:@"野蠻人", @"法師", @"弓箭手", @"盜賊", @"德魯伊", @"騎士", nil];
     
     //點鍵盤外面可收起鍵盤
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resignOnTap:)];
@@ -88,7 +87,13 @@ NSArray *merchandises;
              NSString *data = [NSString stringWithFormat: @"%@ - %@", name, price];
              [merchandiseArray addObject:data];
          }
-         [self.tableViewMerchandise reloadData];
+         
+         dispatch_async(dispatch_get_main_queue(), ^{
+             //不同Thread  UI處理
+             [self.tableViewMerchandise reloadData];
+             self.inputName.text = @"";
+             self.inputPrice.text = @"";
+         });
          
          for (id key in response){
              NSLog(@"key: %@ ,value: %@",key,[response objectForKey:key]);
@@ -164,18 +169,15 @@ NSArray *merchandises;
          {
              NSLog(@"key: %@ ,value: %@",key,[response objectForKey:key]);
          }
-         
+
          [self setMerchandiseTable];
+        
      } failure:^(NSDictionary *response) {
          for (id key in response)
          {
              NSLog(@"key: %@ ,value: %@",key,[response objectForKey:key]);
          }
      }];
-    
-    
-    self.inputName.text = @"";
-    self.inputPrice.text = @"";
 }
 
 
