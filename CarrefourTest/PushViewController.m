@@ -48,4 +48,38 @@
     [[AnPush shared] register:arrayChannels overwrite:YES];
 }
 
+- (IBAction)buttonSendNotification:(id)sender {
+    NSString* strAlertMessage = [NSString stringWithFormat:@"\"%@\"", @"This is a Lightspeed Push Notification"];
+    NSString* strSound = [NSString stringWithFormat:@"\"%@\"", @"default"];
+    NSString* strData = [NSString stringWithFormat:@"payload={\"ios\":{\"alert\":%@,\"badge\":1,\"sound\":%@}}", strAlertMessage, strSound];
+    NSURL* requestURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?key=%@", LIGHTSPEED_API_BASEURL, LIGHTSPEED_API_SEND_PUSH, kArrownockAppKey]];
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:requestURL];
+    
+    [request setHTTPMethod:@"POST"];
+    NSData* postData = [strData dataUsingEncoding:NSUTF8StringEncoding];
+    NSString* postDataLengthString = [NSString stringWithFormat:@"%d", [postData length]];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:postDataLengthString forHTTPHeaderField:@"Content-Length"];
+    [request setHTTPBody:postData];
+    
+    NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [connection start];
+}
+
+#pragma mark - NSURLConnectionDelegate
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
+    
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    NSLog(@"Error %@" ,error);
+}
+
 @end
