@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AnSocial.h"
 
 @interface PushViewController : UIViewController
+@property (strong, nonatomic) AnSocial *anSocial;
 
 - (IBAction)buttonClick:(id)sender;
 

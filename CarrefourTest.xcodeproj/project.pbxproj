@@ -18,6 +18,12 @@
 		040481811C200305007F3927 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 040481801C200305007F3927 /* GoogleService-Info.plist */; };
 		04755C9B1C21521D0058AD5F /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04755C9A1C21521D0058AD5F /* MapViewController.m */; };
 		04868A601C2FD50A00D7896B /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04868A5F1C2FD50A00D7896B /* PushViewController.m */; };
+		04868A821C2FE16800D7896B /* CarrefourTest.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 04868A811C2FE16800D7896B /* CarrefourTest.entitlements */; };
+		04868A8B1C2FE7FA00D7896B /* libLightspeed-arm64-2.23.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868A861C2FE7FA00D7896B /* libLightspeed-arm64-2.23.7.a */; };
+		04868A8C1C2FE7FA00D7896B /* libLightspeed-armv7-2.23.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868A871C2FE7FA00D7896B /* libLightspeed-armv7-2.23.7.a */; };
+		04868A8D1C2FE7FA00D7896B /* libLightspeed-armv7s-2.23.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868A881C2FE7FA00D7896B /* libLightspeed-armv7s-2.23.7.a */; };
+		04868A8E1C2FE7FA00D7896B /* libLightspeed-i386-2.23.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868A891C2FE7FA00D7896B /* libLightspeed-i386-2.23.7.a */; };
+		04868A8F1C2FE7FA00D7896B /* libLightspeed-x86_64-2.23.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868A8A1C2FE7FA00D7896B /* libLightspeed-x86_64-2.23.7.a */; };
 		04A5D57E1C21710900E1AFE9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A5D57D1C21710900E1AFE9 /* MapKit.framework */; };
 		04A5D5821C22B94000E1AFE9 /* CustomMKAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D5811C22B94000E1AFE9 /* CustomMKAnnotation.m */; };
 		2ADD612135D0FF7FC1DF26BD /* libPods-CarrefourTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF321E7368AECAA31C9EFA /* libPods-CarrefourTest.a */; };
@@ -62,6 +68,32 @@
 		04755C9A1C21521D0058AD5F /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		04868A5E1C2FD50A00D7896B /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
 		04868A5F1C2FD50A00D7896B /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+		04868A641C2FD6D300D7896B /* libanLive-arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libanLive-arm64.a"; sourceTree = "<group>"; };
+		04868A651C2FD6D300D7896B /* libanLive-armv7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libanLive-armv7.a"; sourceTree = "<group>"; };
+		04868A661C2FD6D300D7896B /* libanLive-i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libanLive-i386.a"; sourceTree = "<group>"; };
+		04868A691C2FD6D300D7896B /* AnDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnDeviceManager.h; sourceTree = "<group>"; };
+		04868A6A1C2FD6D300D7896B /* AnIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnIM.h; sourceTree = "<group>"; };
+		04868A6B1C2FD6D300D7896B /* AnIMMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnIMMessage.h; sourceTree = "<group>"; };
+		04868A6C1C2FD6D300D7896B /* AnLive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnLive.h; sourceTree = "<group>"; };
+		04868A6D1C2FD6D300D7896B /* AnLiveLocalVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnLiveLocalVideoView.h; sourceTree = "<group>"; };
+		04868A6E1C2FD6D300D7896B /* AnLiveProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnLiveProtocols.h; sourceTree = "<group>"; };
+		04868A6F1C2FD6D300D7896B /* AnLiveVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnLiveVideoView.h; sourceTree = "<group>"; };
+		04868A701C2FD6D300D7896B /* AnPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnPush.h; sourceTree = "<group>"; };
+		04868A711C2FD6D300D7896B /* AnSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnSocial.h; sourceTree = "<group>"; };
+		04868A721C2FD6D300D7896B /* AnSocialFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnSocialFile.h; sourceTree = "<group>"; };
+		04868A731C2FD6D300D7896B /* ArrownockException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrownockException.h; sourceTree = "<group>"; };
+		04868A741C2FD6D300D7896B /* libLightspeed-arm64-2.23.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libLightspeed-arm64-2.23.7.a"; sourceTree = "<group>"; };
+		04868A751C2FD6D300D7896B /* libLightspeed-armv7-2.23.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libLightspeed-armv7-2.23.7.a"; sourceTree = "<group>"; };
+		04868A761C2FD6D300D7896B /* libLightspeed-armv7s-2.23.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libLightspeed-armv7s-2.23.7.a"; sourceTree = "<group>"; };
+		04868A771C2FD6D300D7896B /* libLightspeed-i386-2.23.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libLightspeed-i386-2.23.7.a"; sourceTree = "<group>"; };
+		04868A781C2FD6D300D7896B /* libLightspeed-x86_64-2.23.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libLightspeed-x86_64-2.23.7.a"; sourceTree = "<group>"; };
+		04868A811C2FE16800D7896B /* CarrefourTest.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CarrefourTest.entitlements; sourceTree = "<group>"; };
+		04868A861C2FE7FA00D7896B /* libLightspeed-arm64-2.23.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libLightspeed-arm64-2.23.7.a"; path = "../lib/lightspeed-sdk-2.23.7/libLightspeed-arm64-2.23.7.a"; sourceTree = "<group>"; };
+		04868A871C2FE7FA00D7896B /* libLightspeed-armv7-2.23.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libLightspeed-armv7-2.23.7.a"; path = "../lib/lightspeed-sdk-2.23.7/libLightspeed-armv7-2.23.7.a"; sourceTree = "<group>"; };
+		04868A881C2FE7FA00D7896B /* libLightspeed-armv7s-2.23.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libLightspeed-armv7s-2.23.7.a"; path = "../lib/lightspeed-sdk-2.23.7/libLightspeed-armv7s-2.23.7.a"; sourceTree = "<group>"; };
+		04868A891C2FE7FA00D7896B /* libLightspeed-i386-2.23.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libLightspeed-i386-2.23.7.a"; path = "../lib/lightspeed-sdk-2.23.7/libLightspeed-i386-2.23.7.a"; sourceTree = "<group>"; };
+		04868A8A1C2FE7FA00D7896B /* libLightspeed-x86_64-2.23.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libLightspeed-x86_64-2.23.7.a"; path = "../lib/lightspeed-sdk-2.23.7/libLightspeed-x86_64-2.23.7.a"; sourceTree = "<group>"; };
+		04868A901C30CCBA00D7896B /* LightspeedCredentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightspeedCredentials.h; sourceTree = "<group>"; };
 		04A5D57D1C21710900E1AFE9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		04A5D5801C22B94000E1AFE9 /* CustomMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMKAnnotation.h; sourceTree = "<group>"; };
 		04A5D5811C22B94000E1AFE9 /* CustomMKAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMKAnnotation.m; sourceTree = "<group>"; };
@@ -75,6 +107,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04868A8B1C2FE7FA00D7896B /* libLightspeed-arm64-2.23.7.a in Frameworks */,
+				04868A8C1C2FE7FA00D7896B /* libLightspeed-armv7-2.23.7.a in Frameworks */,
+				04868A8D1C2FE7FA00D7896B /* libLightspeed-armv7s-2.23.7.a in Frameworks */,
+				04868A8E1C2FE7FA00D7896B /* libLightspeed-i386-2.23.7.a in Frameworks */,
+				04868A8F1C2FE7FA00D7896B /* libLightspeed-x86_64-2.23.7.a in Frameworks */,
 				04A5D57E1C21710900E1AFE9 /* MapKit.framework in Frameworks */,
 				2ADD612135D0FF7FC1DF26BD /* libPods-CarrefourTest.a in Frameworks */,
 			);
@@ -122,7 +159,9 @@
 		0404814C1C200203007F3927 /* CarrefourTest */ = {
 			isa = PBXGroup;
 			children = (
+				04868A611C2FD6A600D7896B /* lib */,
 				04A5D57F1C22B91F00E1AFE9 /* Model */,
+				04868A811C2FE16800D7896B /* CarrefourTest.entitlements */,
 				040481501C200203007F3927 /* AppDelegate.h */,
 				040481511C200203007F3927 /* AppDelegate.m */,
 				040481531C200203007F3927 /* ViewController.h */,
@@ -131,6 +170,7 @@
 				04755C9A1C21521D0058AD5F /* MapViewController.m */,
 				04868A5E1C2FD50A00D7896B /* PushViewController.h */,
 				04868A5F1C2FD50A00D7896B /* PushViewController.m */,
+				04868A901C30CCBA00D7896B /* LightspeedCredentials.h */,
 				040481561C200203007F3927 /* Main.storyboard */,
 				040481591C200203007F3927 /* Assets.xcassets */,
 				0404815B1C200203007F3927 /* LaunchScreen.storyboard */,
@@ -167,6 +207,64 @@
 			path = CarrefourTestUITests;
 			sourceTree = "<group>";
 		};
+		04868A611C2FD6A600D7896B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				04868A621C2FD6D300D7896B /* lightspeed-sdk-2.23.7 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		04868A621C2FD6D300D7896B /* lightspeed-sdk-2.23.7 */ = {
+			isa = PBXGroup;
+			children = (
+				04868A631C2FD6D300D7896B /* anLive */,
+				04868A671C2FD6D300D7896B /* include */,
+				04868A741C2FD6D300D7896B /* libLightspeed-arm64-2.23.7.a */,
+				04868A751C2FD6D300D7896B /* libLightspeed-armv7-2.23.7.a */,
+				04868A761C2FD6D300D7896B /* libLightspeed-armv7s-2.23.7.a */,
+				04868A771C2FD6D300D7896B /* libLightspeed-i386-2.23.7.a */,
+				04868A781C2FD6D300D7896B /* libLightspeed-x86_64-2.23.7.a */,
+			);
+			path = "lightspeed-sdk-2.23.7";
+			sourceTree = "<group>";
+		};
+		04868A631C2FD6D300D7896B /* anLive */ = {
+			isa = PBXGroup;
+			children = (
+				04868A641C2FD6D300D7896B /* libanLive-arm64.a */,
+				04868A651C2FD6D300D7896B /* libanLive-armv7.a */,
+				04868A661C2FD6D300D7896B /* libanLive-i386.a */,
+			);
+			path = anLive;
+			sourceTree = "<group>";
+		};
+		04868A671C2FD6D300D7896B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				04868A681C2FD6D300D7896B /* Arrownock */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		04868A681C2FD6D300D7896B /* Arrownock */ = {
+			isa = PBXGroup;
+			children = (
+				04868A691C2FD6D300D7896B /* AnDeviceManager.h */,
+				04868A6A1C2FD6D300D7896B /* AnIM.h */,
+				04868A6B1C2FD6D300D7896B /* AnIMMessage.h */,
+				04868A6C1C2FD6D300D7896B /* AnLive.h */,
+				04868A6D1C2FD6D300D7896B /* AnLiveLocalVideoView.h */,
+				04868A6E1C2FD6D300D7896B /* AnLiveProtocols.h */,
+				04868A6F1C2FD6D300D7896B /* AnLiveVideoView.h */,
+				04868A701C2FD6D300D7896B /* AnPush.h */,
+				04868A711C2FD6D300D7896B /* AnSocial.h */,
+				04868A721C2FD6D300D7896B /* AnSocialFile.h */,
+				04868A731C2FD6D300D7896B /* ArrownockException.h */,
+			);
+			path = Arrownock;
+			sourceTree = "<group>";
+		};
 		04A5D57F1C22B91F00E1AFE9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +277,11 @@
 		2CEFF8125C5DA85268859386 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04868A861C2FE7FA00D7896B /* libLightspeed-arm64-2.23.7.a */,
+				04868A871C2FE7FA00D7896B /* libLightspeed-armv7-2.23.7.a */,
+				04868A881C2FE7FA00D7896B /* libLightspeed-armv7s-2.23.7.a */,
+				04868A891C2FE7FA00D7896B /* libLightspeed-i386-2.23.7.a */,
+				04868A8A1C2FE7FA00D7896B /* libLightspeed-x86_64-2.23.7.a */,
 				04A5D57D1C21710900E1AFE9 /* MapKit.framework */,
 				18EF321E7368AECAA31C9EFA /* libPods-CarrefourTest.a */,
 			);
@@ -266,8 +369,14 @@
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = TW8V44NSF9;
 						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
 							com.apple.Maps.iOS = {
 								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
 							};
 						};
 					};
@@ -308,6 +417,7 @@
 			files = (
 				0404815D1C200203007F3927 /* LaunchScreen.storyboard in Resources */,
 				040481811C200305007F3927 /* GoogleService-Info.plist in Resources */,
+				04868A821C2FE16800D7896B /* CarrefourTest.entitlements in Resources */,
 				0404815A1C200203007F3927 /* Assets.xcassets in Resources */,
 				040481581C200203007F3927 /* Main.storyboard in Resources */,
 			);
@@ -529,13 +639,35 @@
 			baseConfigurationReference = 3AAF9EBBD6E3C5E16DB3883A /* Pods-CarrefourTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: WebComm Technology Co., Ltd.";
+				CODE_SIGN_ENTITLEMENTS = CarrefourTest/CarrefourTest.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ING YI CHEN (MF4479NZ37)";
 				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAppUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAuthUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"/Users/mac/Desktop/Carrefour/CarrefourTest/CarrefourTest/lightspeed-sdk-2.23.7",
+				);
 				INFOPLIST_FILE = CarrefourTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7/anLive",
+					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7",
+					"/Users/mac/Desktop/Carrefour/CarrefourTest/CarrefourTest/lightspeed-sdk-2.23.7",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcomm.apps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "dd95191e-7290-4d84-895c-b77eae9f988c";
+				PROVISIONING_PROFILE = "972791a0-d8ac-4ced-88cd-258951901031";
 			};
 			name = Debug;
 		};
@@ -544,13 +676,35 @@
 			baseConfigurationReference = 7530EB51A80505752B2B8CFE /* Pods-CarrefourTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: WebComm Technology Co., Ltd.";
+				CODE_SIGN_ENTITLEMENTS = CarrefourTest/CarrefourTest.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ING YI CHEN (MF4479NZ37)";
 				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAppUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAuthUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"/Users/mac/Desktop/Carrefour/CarrefourTest/CarrefourTest/lightspeed-sdk-2.23.7",
+				);
 				INFOPLIST_FILE = CarrefourTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7/anLive",
+					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7",
+					"/Users/mac/Desktop/Carrefour/CarrefourTest/CarrefourTest/lightspeed-sdk-2.23.7",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcomm.apps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "dd95191e-7290-4d84-895c-b77eae9f988c";
+				PROVISIONING_PROFILE = "972791a0-d8ac-4ced-88cd-258951901031";
 			};
 			name = Release;
 		};

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <Google/SignIn.h>
+#import "AnPush.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, GIDSignInDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, GIDSignInDelegate, AnPushDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
