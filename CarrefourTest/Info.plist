@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleDocumentTypes</key>
-	<array/>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -27,7 +25,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>webComm.test.CarrefourTest</string>
+				<string>co.herxun.csm.beta</string>
 			</array>
 		</dict>
 		<dict>
@@ -35,7 +33,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.435617521510-lnbqkjhul7rsr75h6jvv8eslbfe05t1g</string>
+				<string>com.googleusercontent.apps.388055114325-qnu1q9nq8ucif9n5qi8r5v7qfqjp6i65</string>
 			</array>
 		</dict>
 	</array>
