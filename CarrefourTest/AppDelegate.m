@@ -20,12 +20,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
 //    NSError* configureError;
 //    
 //    [[GGLContext sharedInstance] configureWithError: &configureError];
 //    NSAssert(!configureError, @"Error configuring Google services: %@", configureError);
+//   手動設定google client ID, 找不到上面的GGLContext
+    [GIDSignIn sharedInstance].clientID = GOOGLE_CLIENT_ID;
     
-    [GIDSignIn sharedInstance].clientID = @"388055114325-qnu1q9nq8ucif9n5qi8r5v7qfqjp6i65.apps.googleusercontent.com";
     [GIDSignIn sharedInstance].delegate = self;
     
     
