@@ -24,6 +24,16 @@
 		04868A8D1C2FE7FA00D7896B /* libLightspeed-armv7s-2.23.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868A881C2FE7FA00D7896B /* libLightspeed-armv7s-2.23.7.a */; };
 		04868A8E1C2FE7FA00D7896B /* libLightspeed-i386-2.23.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868A891C2FE7FA00D7896B /* libLightspeed-i386-2.23.7.a */; };
 		04868A8F1C2FE7FA00D7896B /* libLightspeed-x86_64-2.23.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868A8A1C2FE7FA00D7896B /* libLightspeed-x86_64-2.23.7.a */; };
+		04868AB71C32307900D7896B /* libNeioo-arm64-1.0b.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868AA81C32307900D7896B /* libNeioo-arm64-1.0b.a */; };
+		04868AB81C32307900D7896B /* libNeioo-armv7-1.0b.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868AA91C32307900D7896B /* libNeioo-armv7-1.0b.a */; };
+		04868AB91C32307900D7896B /* libNeioo-armv7s-1.0b.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868AAA1C32307900D7896B /* libNeioo-armv7s-1.0b.a */; };
+		04868ABA1C32307900D7896B /* libNeioo-i386-1.0b.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868AAB1C32307900D7896B /* libNeioo-i386-1.0b.a */; };
+		04868ABB1C32307900D7896B /* libNeioo-x86_64-1.0b.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868AAC1C32307900D7896B /* libNeioo-x86_64-1.0b.a */; };
+		04868ABC1C32307900D7896B /* libSensoroBeaconKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868AB61C32307900D7896B /* libSensoroBeaconKit.a */; };
+		04868ABE1C32311600D7896B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868ABD1C32311600D7896B /* SystemConfiguration.framework */; };
+		04868AC01C32312000D7896B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868ABF1C32312000D7896B /* Security.framework */; };
+		04868AC21C32312800D7896B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868AC11C32312800D7896B /* CoreLocation.framework */; };
+		04868AC41C32313000D7896B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868AC31C32313000D7896B /* CoreBluetooth.framework */; };
 		04A5D57E1C21710900E1AFE9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A5D57D1C21710900E1AFE9 /* MapKit.framework */; };
 		04A5D5821C22B94000E1AFE9 /* CustomMKAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D5811C22B94000E1AFE9 /* CustomMKAnnotation.m */; };
 		2ADD612135D0FF7FC1DF26BD /* libPods-CarrefourTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF321E7368AECAA31C9EFA /* libPods-CarrefourTest.a */; };
@@ -94,6 +104,30 @@
 		04868A891C2FE7FA00D7896B /* libLightspeed-i386-2.23.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libLightspeed-i386-2.23.7.a"; path = "../lib/lightspeed-sdk-2.23.7/libLightspeed-i386-2.23.7.a"; sourceTree = "<group>"; };
 		04868A8A1C2FE7FA00D7896B /* libLightspeed-x86_64-2.23.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libLightspeed-x86_64-2.23.7.a"; path = "../lib/lightspeed-sdk-2.23.7/libLightspeed-x86_64-2.23.7.a"; sourceTree = "<group>"; };
 		04868A901C30CCBA00D7896B /* LightspeedCredentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightspeedCredentials.h; sourceTree = "<group>"; };
+		04868AA11C32307900D7896B /* Neioo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neioo.h; sourceTree = "<group>"; };
+		04868AA21C32307900D7896B /* NeiooAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeiooAction.h; sourceTree = "<group>"; };
+		04868AA31C32307900D7896B /* NeiooBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeiooBeacon.h; sourceTree = "<group>"; };
+		04868AA41C32307900D7896B /* NeiooCampaign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeiooCampaign.h; sourceTree = "<group>"; };
+		04868AA51C32307900D7896B /* NeiooCriteria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeiooCriteria.h; sourceTree = "<group>"; };
+		04868AA61C32307900D7896B /* NeiooException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeiooException.h; sourceTree = "<group>"; };
+		04868AA71C32307900D7896B /* NeiooSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeiooSpace.h; sourceTree = "<group>"; };
+		04868AA81C32307900D7896B /* libNeioo-arm64-1.0b.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libNeioo-arm64-1.0b.a"; sourceTree = "<group>"; };
+		04868AA91C32307900D7896B /* libNeioo-armv7-1.0b.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libNeioo-armv7-1.0b.a"; sourceTree = "<group>"; };
+		04868AAA1C32307900D7896B /* libNeioo-armv7s-1.0b.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libNeioo-armv7s-1.0b.a"; sourceTree = "<group>"; };
+		04868AAB1C32307900D7896B /* libNeioo-i386-1.0b.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libNeioo-i386-1.0b.a"; sourceTree = "<group>"; };
+		04868AAC1C32307900D7896B /* libNeioo-x86_64-1.0b.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libNeioo-x86_64-1.0b.a"; sourceTree = "<group>"; };
+		04868AAF1C32307900D7896B /* SBKBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeacon.h; sourceTree = "<group>"; };
+		04868AB01C32307900D7896B /* SBKBeaconID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeaconID.h; sourceTree = "<group>"; };
+		04868AB11C32307900D7896B /* SBKBeaconManager+Cloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SBKBeaconManager+Cloud.h"; sourceTree = "<group>"; };
+		04868AB21C32307900D7896B /* SBKBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKBeaconManager.h; sourceTree = "<group>"; };
+		04868AB31C32307900D7896B /* SBKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKConstants.h; sourceTree = "<group>"; };
+		04868AB41C32307900D7896B /* SBKError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKError.h; sourceTree = "<group>"; };
+		04868AB51C32307900D7896B /* SBKUnitConvertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBKUnitConvertHelper.h; sourceTree = "<group>"; };
+		04868AB61C32307900D7896B /* libSensoroBeaconKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSensoroBeaconKit.a; sourceTree = "<group>"; };
+		04868ABD1C32311600D7896B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		04868ABF1C32312000D7896B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		04868AC11C32312800D7896B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		04868AC31C32313000D7896B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		04A5D57D1C21710900E1AFE9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		04A5D5801C22B94000E1AFE9 /* CustomMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMKAnnotation.h; sourceTree = "<group>"; };
 		04A5D5811C22B94000E1AFE9 /* CustomMKAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMKAnnotation.m; sourceTree = "<group>"; };
@@ -107,13 +141,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04868AC41C32313000D7896B /* CoreBluetooth.framework in Frameworks */,
+				04868AC21C32312800D7896B /* CoreLocation.framework in Frameworks */,
+				04868AC01C32312000D7896B /* Security.framework in Frameworks */,
+				04868ABE1C32311600D7896B /* SystemConfiguration.framework in Frameworks */,
+				04868ABB1C32307900D7896B /* libNeioo-x86_64-1.0b.a in Frameworks */,
+				04868ABC1C32307900D7896B /* libSensoroBeaconKit.a in Frameworks */,
 				04868A8B1C2FE7FA00D7896B /* libLightspeed-arm64-2.23.7.a in Frameworks */,
+				04868AB91C32307900D7896B /* libNeioo-armv7s-1.0b.a in Frameworks */,
 				04868A8C1C2FE7FA00D7896B /* libLightspeed-armv7-2.23.7.a in Frameworks */,
+				04868AB71C32307900D7896B /* libNeioo-arm64-1.0b.a in Frameworks */,
 				04868A8D1C2FE7FA00D7896B /* libLightspeed-armv7s-2.23.7.a in Frameworks */,
 				04868A8E1C2FE7FA00D7896B /* libLightspeed-i386-2.23.7.a in Frameworks */,
 				04868A8F1C2FE7FA00D7896B /* libLightspeed-x86_64-2.23.7.a in Frameworks */,
 				04A5D57E1C21710900E1AFE9 /* MapKit.framework in Frameworks */,
+				04868ABA1C32307900D7896B /* libNeioo-i386-1.0b.a in Frameworks */,
 				2ADD612135D0FF7FC1DF26BD /* libPods-CarrefourTest.a in Frameworks */,
+				04868AB81C32307900D7896B /* libNeioo-armv7-1.0b.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +249,7 @@
 		04868A611C2FD6A600D7896B /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				04868A9F1C32307900D7896B /* NeiooSDK */,
 				04868A621C2FD6D300D7896B /* lightspeed-sdk-2.23.7 */,
 			);
 			name = lib;
@@ -271,6 +316,58 @@
 			name = LightSpeed;
 			sourceTree = "<group>";
 		};
+		04868A9F1C32307900D7896B /* NeiooSDK */ = {
+			isa = PBXGroup;
+			children = (
+				04868AA01C32307900D7896B /* include */,
+				04868AA81C32307900D7896B /* libNeioo-arm64-1.0b.a */,
+				04868AA91C32307900D7896B /* libNeioo-armv7-1.0b.a */,
+				04868AAA1C32307900D7896B /* libNeioo-armv7s-1.0b.a */,
+				04868AAB1C32307900D7896B /* libNeioo-i386-1.0b.a */,
+				04868AAC1C32307900D7896B /* libNeioo-x86_64-1.0b.a */,
+				04868AAD1C32307900D7896B /* SensoroBeaconKit */,
+			);
+			name = NeiooSDK;
+			path = "lightspeed-sdk-2.23.7/NeiooSDK";
+			sourceTree = "<group>";
+		};
+		04868AA01C32307900D7896B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				04868AA11C32307900D7896B /* Neioo.h */,
+				04868AA21C32307900D7896B /* NeiooAction.h */,
+				04868AA31C32307900D7896B /* NeiooBeacon.h */,
+				04868AA41C32307900D7896B /* NeiooCampaign.h */,
+				04868AA51C32307900D7896B /* NeiooCriteria.h */,
+				04868AA61C32307900D7896B /* NeiooException.h */,
+				04868AA71C32307900D7896B /* NeiooSpace.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		04868AAD1C32307900D7896B /* SensoroBeaconKit */ = {
+			isa = PBXGroup;
+			children = (
+				04868AAE1C32307900D7896B /* Headers */,
+				04868AB61C32307900D7896B /* libSensoroBeaconKit.a */,
+			);
+			path = SensoroBeaconKit;
+			sourceTree = "<group>";
+		};
+		04868AAE1C32307900D7896B /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				04868AAF1C32307900D7896B /* SBKBeacon.h */,
+				04868AB01C32307900D7896B /* SBKBeaconID.h */,
+				04868AB11C32307900D7896B /* SBKBeaconManager+Cloud.h */,
+				04868AB21C32307900D7896B /* SBKBeaconManager.h */,
+				04868AB31C32307900D7896B /* SBKConstants.h */,
+				04868AB41C32307900D7896B /* SBKError.h */,
+				04868AB51C32307900D7896B /* SBKUnitConvertHelper.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		04A5D57F1C22B91F00E1AFE9 /* Google */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +382,10 @@
 		2CEFF8125C5DA85268859386 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04868AC31C32313000D7896B /* CoreBluetooth.framework */,
+				04868AC11C32312800D7896B /* CoreLocation.framework */,
+				04868ABF1C32312000D7896B /* Security.framework */,
+				04868ABD1C32311600D7896B /* SystemConfiguration.framework */,
 				04868A861C2FE7FA00D7896B /* libLightspeed-arm64-2.23.7.a */,
 				04868A871C2FE7FA00D7896B /* libLightspeed-armv7-2.23.7.a */,
 				04868A881C2FE7FA00D7896B /* libLightspeed-armv7s-2.23.7.a */,
@@ -672,6 +773,8 @@
 					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7/anLive",
 					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7",
 					"/Users/mac/Desktop/Carrefour/CarrefourTest/CarrefourTest/lightspeed-sdk-2.23.7",
+					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7/NeiooSDK",
+					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7/NeiooSDK/SensoroBeaconKit",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcomm.apps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -709,6 +812,8 @@
 					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7/anLive",
 					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7",
 					"/Users/mac/Desktop/Carrefour/CarrefourTest/CarrefourTest/lightspeed-sdk-2.23.7",
+					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7/NeiooSDK",
+					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7/NeiooSDK/SensoroBeaconKit",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcomm.apps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
