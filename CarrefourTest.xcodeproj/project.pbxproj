@@ -776,9 +776,9 @@
 					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7/NeiooSDK",
 					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7/NeiooSDK/SensoroBeaconKit",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcomm.apps;
+				PRODUCT_BUNDLE_IDENTIFIER = co.herxun.csm.beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "972791a0-d8ac-4ced-88cd-258951901031";
+				PROVISIONING_PROFILE = "c9cf3597-3003-4912-9353-8bd834e73655";
 			};
 			name = Debug;
 		};
@@ -815,9 +815,9 @@
 					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7/NeiooSDK",
 					"$(PROJECT_DIR)/CarrefourTest/lightspeed-sdk-2.23.7/NeiooSDK/SensoroBeaconKit",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appcomm.apps;
+				PRODUCT_BUNDLE_IDENTIFIER = co.herxun.csm.beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "972791a0-d8ac-4ced-88cd-258951901031";
+				PROVISIONING_PROFILE = "c9cf3597-3003-4912-9353-8bd834e73655";
 			};
 			name = Release;
 		};
