@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Google/SignIn.h>
+#import <GoogleSignIn/GoogleSignIn.h>
 #import "AnPush.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, GIDSignInDelegate, AnPushDelegate>
