@@ -144,7 +144,6 @@
 		04A5D57D1C21710900E1AFE9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		04A5D5801C22B94000E1AFE9 /* CustomMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMKAnnotation.h; sourceTree = "<group>"; };
 		04A5D5811C22B94000E1AFE9 /* CustomMKAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMKAnnotation.m; sourceTree = "<group>"; };
-		18EF321E7368AECAA31C9EFA /* libPods-CarrefourTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CarrefourTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAF9EBBD6E3C5E16DB3883A /* Pods-CarrefourTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarrefourTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarrefourTest/Pods-CarrefourTest.debug.xcconfig"; sourceTree = "<group>"; };
 		7530EB51A80505752B2B8CFE /* Pods-CarrefourTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarrefourTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarrefourTest/Pods-CarrefourTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -425,7 +424,6 @@
 				04868A891C2FE7FA00D7896B /* libLightspeed-i386-2.23.7.a */,
 				04868A8A1C2FE7FA00D7896B /* libLightspeed-x86_64-2.23.7.a */,
 				04A5D57D1C21710900E1AFE9 /* MapKit.framework */,
-				18EF321E7368AECAA31C9EFA /* libPods-CarrefourTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
