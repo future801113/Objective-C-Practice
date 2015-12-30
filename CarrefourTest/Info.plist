@@ -47,9 +47,9 @@
 		<true/>
 	</dict>
 	<key>NSLocationAlwaysUsagDescription</key>
-	<string>開啟「定位服務」來允許「beacon」確認您的位置</string>
+	<string>請開啟「定位服務」來允許「beacon」確認您的位置</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>開啟「定位服務」來允許「beacon」確認您的位置</string>
+	<string>請開啟「定位服務」來允許「beacon」確認您的位置</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

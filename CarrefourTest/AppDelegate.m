@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "AnPush.h"
 #import "LightspeedCredentials.h"
+#import "Neioo.h"
 
 @interface AppDelegate ()
 
@@ -60,6 +61,14 @@
         if (tokenData)
             [AnPush setup:kArrownockAppKey deviceToken:tokenData delegate:self secure:YES];
     }
+    
+    //Neioo Init
+    // 2. Initialize Neioo
+    [Neioo setUpAppKey:NEIOO_API_KEY delegate:self withLocationAuthorization:NeiooLocationAuthorizationAlways];
+    // 3. start Neioo
+    [[Neioo shared] enable];
+    
+    
     
     return YES;
 }
@@ -197,5 +206,25 @@ didDisconnectWithUser:(GIDGoogleUser *)user
     return YES;
 }
 
+#pragma mark - NeiooDelegate functions
+- (void)neioo:(Neioo *)neioo didEnterSpace:(NeiooSpace *)space
+{
+    NSLog(@"Enter Space!!!");
+}
 
+- (void)neioo:(Neioo *)neioo didLeaveSpace:(NeiooSpace *)space
+{
+    NSLog(@"Leave Space!!!");
+}
+
+- (void)campaignTriggered:(NeiooCampaign *)campaign beacon:(NeiooBeacon *)beacon
+{
+    for (NeiooAction *action in campaign.actions){
+        // ex.
+        if ([action.type isEqualToString:@"show_image"]){
+            // show image
+            NSLog(@"Trigger action!!!!!, action type: %@",action.type);
+        }
+    }
+}
 @end
