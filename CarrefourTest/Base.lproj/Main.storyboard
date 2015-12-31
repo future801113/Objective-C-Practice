@@ -49,7 +49,7 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ai1-5d-7Nu">
-                                <rect key="frame" x="257" y="63" width="30" height="30"/>
+                                <rect key="frame" x="229" y="63" width="58" height="30"/>
                                 <state key="normal" title="Map"/>
                                 <connections>
                                     <segue destination="lka-sd-PAy" kind="modal" id="hFR-4J-zrL"/>
@@ -63,10 +63,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhe-eM-yzI">
-                                <rect key="frame" x="223" y="93" width="77" height="30"/>
+                                <rect key="frame" x="197" y="97" width="123" height="30"/>
                                 <state key="normal" title="Push"/>
                                 <connections>
                                     <segue destination="OjL-AG-E01" kind="modal" id="ls2-4c-oIT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cr5-nH-Ca9">
+                                <rect key="frame" x="212" y="129" width="88" height="30"/>
+                                <state key="normal" title="Neioo"/>
+                                <connections>
+                                    <segue destination="17G-c5-Qo2" kind="modal" id="xIi-tU-Ag8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -244,7 +251,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aba-PK-XYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130" y="214"/>
+            <point key="canvasLocation" x="-433" y="270"/>
+        </scene>
+        <!--Neioo View Controller-->
+        <scene sceneID="jSd-P2-zbS">
+            <objects>
+                <viewController id="17G-c5-Qo2" customClass="NeiooViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6tf-av-ZkL"/>
+                        <viewControllerLayoutGuide type="bottom" id="uLQ-H9-vwa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nDo-WU-hGW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DsV-7k-WvN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Neioo Beacon" id="IgK-eg-BXi">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="oOt-KZ-0Lc">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B6R-Ld-LP7">
+                                                <rect key="frame" x="16" y="7" width="71" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="buttonBackClicked:" destination="17G-c5-Qo2" eventType="touchUpInside" id="rfs-fm-8nU"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOx-pQ-Xoi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="247"/>
         </scene>
     </scenes>
 </document>

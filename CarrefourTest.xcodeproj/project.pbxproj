@@ -40,6 +40,9 @@
 		04868C011C32618800D7896B /* libLightspeed-x86_64-2.23.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868A781C2FD6D300D7896B /* libLightspeed-x86_64-2.23.7.a */; };
 		04868C081C3268D800D7896B /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868C061C3268D800D7896B /* libz.1.2.5.tbd */; };
 		04868C091C3268D800D7896B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04868C071C3268D800D7896B /* libz.tbd */; };
+		04868DBF1C33C9DD00D7896B /* HXAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 04868DBA1C33C9DD00D7896B /* HXAppUtility.m */; };
+		04868DC51C33CB9900D7896B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 04868DC41C33CB9900D7896B /* Reachability.m */; };
+		04868DCD1C33CF2300D7896B /* NeiooViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04868DCC1C33CF2300D7896B /* NeiooViewController.m */; };
 		04A5D57E1C21710900E1AFE9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A5D57D1C21710900E1AFE9 /* MapKit.framework */; };
 		04A5D5821C22B94000E1AFE9 /* CustomMKAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D5811C22B94000E1AFE9 /* CustomMKAnnotation.m */; };
 /* End PBXBuildFile section */
@@ -141,6 +144,13 @@
 		04868C041C32670C00D7896B /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		04868C061C3268D800D7896B /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		04868C071C3268D800D7896B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		04868DB91C33C9DD00D7896B /* HXAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXAppUtility.h; sourceTree = "<group>"; };
+		04868DBA1C33C9DD00D7896B /* HXAppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXAppUtility.m; sourceTree = "<group>"; };
+		04868DC11C33CA0B00D7896B /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		04868DC31C33CB9900D7896B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		04868DC41C33CB9900D7896B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		04868DCB1C33CF2300D7896B /* NeiooViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeiooViewController.h; sourceTree = "<group>"; };
+		04868DCC1C33CF2300D7896B /* NeiooViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeiooViewController.m; sourceTree = "<group>"; };
 		04A5D57D1C21710900E1AFE9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		04A5D5801C22B94000E1AFE9 /* CustomMKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMKAnnotation.h; sourceTree = "<group>"; };
 		04A5D5811C22B94000E1AFE9 /* CustomMKAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMKAnnotation.m; sourceTree = "<group>"; };
@@ -221,11 +231,13 @@
 			children = (
 				04868A611C2FD6A600D7896B /* lib */,
 				04A5D57F1C22B91F00E1AFE9 /* Google */,
+				04868DCA1C33CE9300D7896B /* Neioo */,
 				04868A941C30E6A000D7896B /* LightSpeed */,
 				040481501C200203007F3927 /* AppDelegate.h */,
 				040481511C200203007F3927 /* AppDelegate.m */,
 				040481531C200203007F3927 /* ViewController.h */,
 				040481541C200203007F3927 /* ViewController.m */,
+				04868DC11C33CA0B00D7896B /* Config.h */,
 				040481561C200203007F3927 /* Main.storyboard */,
 				040481591C200203007F3927 /* Assets.xcassets */,
 				0404815B1C200203007F3927 /* LaunchScreen.storyboard */,
@@ -268,6 +280,7 @@
 				04868BA31C325D3500D7896B /* google_signin_sdk_2_4_0 */,
 				04868A9F1C32307900D7896B /* NeiooSDK */,
 				04868A621C2FD6D300D7896B /* lightspeed-sdk-2.23.7 */,
+				04868DB41C33C9DD00D7896B /* Utility */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -392,6 +405,42 @@
 				04868BA61C325D3500D7896B /* GoogleSignIn.framework */,
 			);
 			path = google_signin_sdk_2_4_0;
+			sourceTree = "<group>";
+		};
+		04868DB41C33C9DD00D7896B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				04868DC21C33CB9900D7896B /* Reachability */,
+				04868DB81C33C9DD00D7896B /* AppUtil */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		04868DB81C33C9DD00D7896B /* AppUtil */ = {
+			isa = PBXGroup;
+			children = (
+				04868DB91C33C9DD00D7896B /* HXAppUtility.h */,
+				04868DBA1C33C9DD00D7896B /* HXAppUtility.m */,
+			);
+			path = AppUtil;
+			sourceTree = "<group>";
+		};
+		04868DC21C33CB9900D7896B /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				04868DC31C33CB9900D7896B /* Reachability.h */,
+				04868DC41C33CB9900D7896B /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		04868DCA1C33CE9300D7896B /* Neioo */ = {
+			isa = PBXGroup;
+			children = (
+				04868DCB1C33CF2300D7896B /* NeiooViewController.h */,
+				04868DCC1C33CF2300D7896B /* NeiooViewController.m */,
+			);
+			name = Neioo;
 			sourceTree = "<group>";
 		};
 		04A5D57F1C22B91F00E1AFE9 /* Google */ = {
@@ -619,9 +668,12 @@
 			files = (
 				04A5D5821C22B94000E1AFE9 /* CustomMKAnnotation.m in Sources */,
 				040481551C200203007F3927 /* ViewController.m in Sources */,
+				04868DC51C33CB9900D7896B /* Reachability.m in Sources */,
 				04868A601C2FD50A00D7896B /* PushViewController.m in Sources */,
+				04868DCD1C33CF2300D7896B /* NeiooViewController.m in Sources */,
 				040481521C200203007F3927 /* AppDelegate.m in Sources */,
 				0404814F1C200203007F3927 /* main.m in Sources */,
+				04868DBF1C33C9DD00D7896B /* HXAppUtility.m in Sources */,
 				04755C9B1C21521D0058AD5F /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -789,6 +841,7 @@
 					"/Users/mac/Desktop/Carrefour/CarrefourTest/CarrefourTest/lightspeed-sdk-2.23.7",
 				);
 				INFOPLIST_FILE = CarrefourTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -836,6 +889,7 @@
 					"/Users/mac/Desktop/Carrefour/CarrefourTest/CarrefourTest/lightspeed-sdk-2.23.7",
 				);
 				INFOPLIST_FILE = CarrefourTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
