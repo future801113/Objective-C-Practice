@@ -16,6 +16,8 @@
 
 @implementation ViewController
 
+NSString *lastToken = @"";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.labelName.text = @"";
@@ -51,15 +53,24 @@
 - (void)refreshProfile {
     GIDGoogleUser *user = [GIDSignIn sharedInstance].currentUser;
     if(user != nil){
+        NSString *token = user.authentication.idToken;
+        NSString *same = @"False";
+        if(lastToken == token){
+            same = @"Ture";
+        }
         self.buttonSignIn.hidden = YES;
         self.buttonSignOut.hidden = NO;
         self.labelName.text = user.profile.name;
         self.labelEmail.text = user.profile.email;
+        self.labelTokenSame.text = same;
+        self.textViewToken.text = token;
         NSURL *imageURL = [user.profile imageURLWithDimension:googleImgSize];
         NSData * data = [[NSData alloc] initWithContentsOfURL:imageURL];
         UIImage *image = [[UIImage alloc] initWithData:data];
         self.imagePic.image = image;
         self.imagePic.hidden = NO;
+        
+        lastToken = token;
     } else {
         self.buttonSignIn.hidden = NO;
         self.buttonSignOut.hidden = YES;

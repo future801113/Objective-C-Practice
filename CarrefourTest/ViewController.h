@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *labelName;
 @property (weak, nonatomic) IBOutlet UILabel *labelEmail;
+@property (weak, nonatomic) IBOutlet UILabel *labelTokenSame;
+@property (weak, nonatomic) IBOutlet UITextView *textViewToken;
 @property (weak, nonatomic) IBOutlet UIImageView *imagePic;
 @property (weak, nonatomic) IBOutlet GIDSignInButton *buttonSignIn;
 @property (weak, nonatomic) IBOutlet UIButton *buttonSignOut;
